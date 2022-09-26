@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo js</title>
+</head>
+
+<body>
+    <h1>1º pag Java Script</h1>
+    <p>Nome principal: Joaquim</p>
+    <script>
+        const texto = document.querySelector('p');
+        texto.addEventListener('click', atualizarNome());
+       function atualizarNome() {
+            var nome = prompt('Insira um novo nome');
+            texto.textContent = 'Nome principal: ' + nome;
+
+        }
+   </script>
+
+</body>
+</html>
+
+<form name="formcadastro" action="mailto: edicarsia.pillon@catolicasc.org.br" method="POST">
+    Nome:<input type="text" name="nome" ><br><br>
+    E-mail:<input type="text" name="email" ><br><br>
+    Senha:<input type="password" name="senha" ><br><br>
+    <input type="submit" onclick="return valida()">
+</form>
+<script type="text/javascript">
+function valida(){
+    var nome = formcadastro.nome.value;
+    var email = formcadastro.email.value;
+    var senha = formcadastro.senha.value;
+    if(nome == ""){
+        alert('Nome obrigatório.');
+        formcadastro.nome.focus();
+        return false;  
+    }
+    if(email == "" || email.indexOf('@') == -1 ){
+        alert('E-mail preenchido incorretamente.');
+        formcadastro.email.focus();
+        return false; 
+    }
+    if(senha == "" || senha.length <= 5){
+        alert('A senha deve conter no mínimo 6 dígitos');
+        formcadastro.senha.focus();
+        return false;
+    }
+}
+</script>
+
+<!-- writeln("mostrar o peso" + peso.toFixed(2));        mostra a quantidade de casas pos virgula-->

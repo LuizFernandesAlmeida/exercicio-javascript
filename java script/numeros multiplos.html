@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeros multiplos</title>
+</head>
+<body>
+
+    <script>
+
+        const numeros = [10, 5, 11, 7, 23, 78, 45, 988, 8, 27];
+
+        var numero = parseInt(prompt("Informe o valor que voce quer calcular"));
+
+        for (i = 0; i < numeros.length; i++) {
+
+            var multiplicacao = numeros[i] * numero;
+
+            document.write("<br>Multiplicação dos Elementos: " + numeros[i] + " * " + numero + " = " + multiplicacao);
+
+            var divisao = numeros[i] / numero;
+
+            document.write("<br>Divisão dos Elementos: " + numeros[i] + " / " + numero + " = " + divisao);
+
+            var subtracao = numeros[i] - numero;
+
+            document.write("<br>Subtração dos Elementos: " + numeros[i] + " - " + numero + " = " + subtracao);
+
+            var soma = numeros[i] + numero;
+
+            document.write("<br>Soma dos Elementos: " + numeros[i] + " + " + numero + " = " + soma);
+
+        }
+
+    </script>  
+    
+</body>
+</html>

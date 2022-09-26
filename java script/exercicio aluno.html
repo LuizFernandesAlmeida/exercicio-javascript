@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio aluno</title>
+</head>
+
+<body>  
+
+      
+       <script>
+       
+       var idade = parseFloat( prompt("informe sua idade:"));
+       var meses;
+        
+       if ( idade >= 0 ){
+        meses = 12;
+        idade = idade * meses;
+        window.alert("sua idade é: " +idade);
+       }
+
+        </script>
+
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+                    var consumo = parseFloat(prompt("INFORME A QUANTIDADE DE ÁGUA CONSUMIDA NO MÊS EM m³:"));
+            var valor;
+
+
+
+                   if (consumo <= 20){
+                        valor = consumo * 1.60;
+                    }
+
+
+
+                   if (consumo >= 21 && consumo <=50){
+                        valor = consumo * 2.80;
+                    }
+
+
+
+                   if (consumo >50){
+                        valor = consumo * 4.20;
+                    }
+                    
+                    if (valor < 100){
+                        window.alert("SEU CONSUMO MENSAL FOI DE R$ " + valor + ", APLICA-SE UM DESCONTO DE 5%: R$" + (valor.toFixed(2)-(valor.toFixed(2)*0,05)));
+                    }
+
+
+
+                   if  (valor > 200){
+                        window.alert("SEU CONSUMO MENSAL FOI DE R$ " + valor + ", APLICA-SE UM ACRÉSCIMO DE 10%: R$" + (valor.toFixed(2))*1.10);
+                    }
+                    if  (valor >= 100 && valor <= 200){
+                                window.alert("SEU CONSUMO MENSAL FOI DE R$ " + valor.toFixed(2));
+                    }
+    </script>
+  </body>
+</html>
+
+
+-->
+
